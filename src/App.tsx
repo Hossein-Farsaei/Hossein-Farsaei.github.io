@@ -5,7 +5,6 @@ import { PortfolioTemplate } from "./components/Primitives/PortfolioTemplate/Por
 import { useState } from "react";
 
 function App() {
-  //console.log(window.location.pathname)
   const currentPage =
     window.location.pathname === "/about_me"
       ? 2

@@ -16,14 +16,10 @@ export const TimeLine = (props: {
   const [scroll, setScrolling] = useState<number>(0);
 
   document.querySelectorAll(".App")[0].addEventListener("scroll", () => {
-    console.log("scroll")
     setScrolling(scroll + 1);
-    
-    console.log(scroll)
   });
 
   useEffect(() => {
-    console.log(scroll)
     const items = document.querySelectorAll(".time-line-item-container");
     items.forEach((item) => {
       const itemTop = item.getBoundingClientRect().top;
