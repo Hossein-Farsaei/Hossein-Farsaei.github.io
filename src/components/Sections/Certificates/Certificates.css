@@ -1,0 +1,16 @@
+.certificates-container {
+  background-color: #757884;
+  margin-top: 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  text-align: justify;
+}
+
+
+.certificates .left-timeline{
+  margin-left: -15px !important;
+  margin-top: 30px !important;
+}
+.certificates .right-timeline{
+  margin-left: 15px !important;
+}

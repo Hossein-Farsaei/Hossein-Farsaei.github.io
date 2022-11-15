@@ -1,0 +1,174 @@
+.portfolio-container {
+  height: calc(100vh - 70px);
+}
+
+/* Portfolio info section */
+.portfolio-info {
+  width: 50vw;
+  height: 100%;
+  text-align: center;
+}
+.portfolio-info * {
+  transition: font-size 0.5s;
+  user-select: none;
+}
+.portfolio-info-item {
+  text-align: left;
+  padding-left: 15vw;
+  cursor: context-menu;
+}
+.portfolio-hello {
+  font-size: 3.5vw;
+}
+.portfolio-name {
+  font-size: 4.5vw;
+}
+.portfolio-position {
+  font-size: 2.5vw;
+}
+.portfolio-info:hover .portfolio-hello {
+  font-size: 4vw;
+}
+.portfolio-info:hover .portfolio-name {
+  font-size: 5.5vw;
+}
+.portfolio-info:hover .portfolio-position {
+  font-size: 3vw;
+}
+
+/* Contact Icons */
+.portfolio-contacts {
+  position: absolute;
+  bottom: 50px;
+  width: 50vw;
+  box-sizing: border-box;
+  padding: 0 10vw;
+}
+.glass-icon {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  font-size: x-large;
+  padding-top: 5px;
+  box-sizing: border-box;
+  backdrop-filter: blur(2px);
+  opacity: 0.8;
+  --box-shadow: 0px 0px 10px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 200ms !important;
+  --border: 1px solid;
+}
+.glass-icon * {
+  transition: 0ms !important;
+}
+.glass-icon:hover {
+  transform: translateY(-10px);
+  opacity: 1;
+  font-size: xx-large;
+}
+
+/* Portfolio avatar image section */
+
+.portfolio-img-container {
+  height: 100%;
+  width: 50vw;
+}
+
+.portfolio-avatar {
+  width: 90%;
+  max-width: 30vw;
+  transition: 0.5s;
+}
+
+.portfolio-img h1 {
+  font-size: 3rem;
+}
+.portfolio-img-container:hover .portfolio-avatar {
+  width: 100%;
+  max-width: 35vw;
+}
+.portfolio-img-container:hover .portfolio-next-page {
+  --font-size: large;
+}
+
+/* Portfolio next page button*/
+.portfolio-next-page {
+  height: 50px;
+  border: 1px solid;
+  gap: 15px;
+  padding: 5px 15px;
+  --margin-bottom: 50px;
+  transition: font-size 0.5s;
+  border-radius: 15pt;
+  position: absolute;
+  bottom: 50px;
+  cursor: pointer;
+}
+.portfolio-next-page:hover {
+  font-size: larger !important;
+}
+
+.portfolio-next-page-arrow {
+  height: 50px;
+  margin-top: 3px;
+}
+
+@media only screen and (max-width: 768px) {
+  .portfolio-container {
+    flex-direction: column;
+  }
+
+  /* Info */
+  .portfolio-info {
+    align-items: center;
+    width: 100vw;
+    height: 33vh;
+  }
+  .portfolio-info-item {
+    text-align: center;
+    padding-left: 0;
+  }
+  /*.portfolio-hello {
+    font-size: 3.5vh;
+  }
+  .portfolio-name {
+    font-size: 4.5vh;
+  }
+  .portfolio-position {
+    font-size: 2.5vh;
+  }*/
+  .portfolio-hello,
+  .portfolio-info:hover .portfolio-hello {
+    font-size: 4vh;
+  }
+  .portfolio-name,
+  .portfolio-info:hover .portfolio-name {
+    font-size: 5.5vh;
+  }
+  .portfolio-position,
+  .portfolio-info:hover .portfolio-position {
+    font-size: 3vh;
+  }
+
+  /* Contact Icons */
+  .portfolio-contacts {
+    bottom: 50px;
+    width: 100vw;
+    padding: 0;
+  }
+
+  /* avatar img*/
+  .portfolio-img-container {
+    height: 50vw;
+    width: 100vw;
+  }
+  .portfolio-avatar {
+    min-width: 60vw;
+  }
+
+  /* Next page btn */
+  .portfolio-next-page {
+    bottom: 150px;
+  }
+}

@@ -1,6 +1,83 @@
 .App {
   text-align: center;
+  max-width: 100vw;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+.light a:-webkit-any-link {
+  color: black !important;
+}
+.dark a:-webkit-any-link {
+  color: #ededed !important;
+}
+
+.flex {display: flex}
+.flex-column {flex-direction: column;}
+.flex-justify-center {justify-content: center;}
+.flex-justify-space-between {justify-content: space-between;}
+.flex-justify-space-around {justify-content: space-around;}
+.flex-justify-space-evenly {justify-content: space-evenly;}
+.flex-align-center {align-items: center;}
+.flex-align-start {align-items: flex-start;}
+.flex-align-end {align-items: flex-end;}
+.flex-wrap {flex-wrap: wrap;}
+
+.block {display: block !important;}
+.hidden {display: none !important;}
+
+.article-container {
+  min-height: calc(100vh - 70px);
+  max-width: 100vw;
+}
+
+.light {
+  background-color: #cfcfcf;
+  color: #000000;
+  transition: 0.5s;
+}
+
+.dark {
+  background-color: #414040;
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +112,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+}*/

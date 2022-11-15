@@ -1,0 +1,48 @@
+.about-me-container {
+  height: calc(100vh - 70px);
+}
+.about-me-container * {
+  cursor: context-menu;
+}
+.about-me-container a {
+  cursor: pointer !important;
+}
+.about-me-container a * {
+  cursor: pointer !important;
+}
+
+.about-me-section {
+  margin-top: 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  text-align: justify;
+}
+.about-me-section:nth-child(even) {
+  background-color: #757884;
+}
+
+/* General styles for about me page */
+.title {
+  font-size: 3vw;
+  text-align: left;
+  width: 100%;
+}
+
+.title-line {
+  width: 30vw;
+  border-top: 10px solid;
+  border-radius: 10pt;
+  margin: 10px 0;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 3vh;
+  }
+  .title-line {
+    width: 60vw;
+    border-top: 7px solid;
+  }
+}

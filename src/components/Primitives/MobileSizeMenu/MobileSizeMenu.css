@@ -1,0 +1,18 @@
+.mobile-screen-menu-list {
+  width: 100vw;
+  height: 100vh;
+  gap: 10vh;
+  margin-left: 0 !important;
+  transition: 0.5s;
+}
+
+
+.mobile-screen-menu-list li p {
+  text-align: left;
+  margin-left: 15vw;
+  display: flex;
+  gap: 30px;
+}
+.mobile-screen-menu-list li p:hover {
+  font-size: larger;
+}

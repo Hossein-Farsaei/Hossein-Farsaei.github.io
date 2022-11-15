@@ -1,0 +1,140 @@
+/*About me*/
+.profile-container {
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.about-me {
+  width: 100vw;
+}
+
+.basic-info-container {
+  flex-direction: row;
+}
+
+/**/
+.basic-info-content {
+  width: 65vw;
+}
+.name {
+  font-size: 4vw;
+}
+.position {
+  font-size: 2vw;
+  /*margin-bottom: 50px;*/
+}
+
+/* Introduction (Avatar Img and Naming) */
+.basic-info-img {
+  width: 30vw;
+  position: relative;
+  --background-image: url("../../../../public/avatar-2.png");
+  height: 30vw;
+  background-size: cover;
+}
+/*.basic-info-img:hover {
+  animation: avatar 200ms 2;
+  --background-image: url("../../../../public/avatar-3.png");
+}
+@keyframes avatar {
+  0% {background-image: url("../../../../public/avatar-2.png")}
+  50% {background-image: url("../../../../public/avatar-3.png")}
+
+  100% {background-image: url("../../../../public/avatar-2.png")}
+}*/
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.noise-img {
+  opacity: 0;
+}
+.basic-info-img:hover .noise-img {
+  animation: avatar 200ms 2;
+}
+@keyframes avatar {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*.avatar-img {
+  min-width: 200px;
+  max-width: 25vw;  
+}
+.basic-info-img:hover .avatar-img{
+  --animation: hue 2s infinite;
+}
+
+@keyframes hue {
+  from{filter: hue-rotate(0deg) drop-shadow(0px 0px 2px);}
+  to {filter: hue-rotate(360deg) drop-shadow(0px 0px 2px);}
+}*/
+
+/**/
+.about-title-container {
+  padding-left: 15px;
+  width: calc(95vw - 15px);
+  margin-bottom: 15px;
+}
+.about-me-introduction {
+  text-align: justify;
+  font-size: x-large;
+}
+.about-me-introduction p {
+  margin-top: 12px;
+}
+
+@media only screen and (max-width: 768px) {
+  .profile-container {
+    margin-bottom: 0px;
+    padding-top: 50px;
+  }
+  .basic-info-container {
+    flex-direction: column;
+  }
+  .basic-info-content {
+    width: 100vw;
+  }
+  .basic-info-img {
+    width: 50vw;
+    height: 50vw;
+  }
+  .name {
+    font-size: 4vh;
+  }
+  .position {
+    font-size: 2vh;
+  }
+  .about-me-introduction {
+    font-size: medium;
+  }
+
+  /*
+  
+  .about-me {
+    width: 90vw;
+  }
+  .introduction {
+    width: 10vw;
+  }
+  .avatar-img {
+    position: absolute;
+    right: 10px;
+    margin-top: calc(50px - 3vw);
+  }
+
+  */
+}

@@ -1,0 +1,25 @@
+/*toggle container*/
+.toggle {
+  margin-top: 12.5px;
+  width: 60px;
+  height: 30px;
+  border-radius: 25px;
+  background-image: url("../../../../public/themeToggle.png");
+  background-size: cover;
+  position: absolute;
+  right: 30px;
+  top: 5px;
+  cursor: pointer;
+}
+
+/*toggle button*/
+.toggle-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #295561;
+  border: 1px solid #414040;
+  box-sizing: border-box;
+  position: absolute;
+  transition: 0.5s;
+}
